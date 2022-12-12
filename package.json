@@ -1,0 +1,26 @@
+{
+  "name": "wardenswap-contracts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "npx hardhat compile",
+    "deploy-testnet": "npx hardhat run --network testnet scripts/deploy.js",
+    "deploy-mainnet": "npx hardhat run --network mainnet scripts/deploy.js",
+    "verify-factory-testnet": "npx hardhat verify --network testnet 0xca26E3BD694c12F5367c09f68bAA274a992b9613 0x7269085Bba5a114D07A4c56546F11366C7Ba124A",
+    "verify-router-testnet": "npx hardhat verify --network testnet 0x833f9Ed2c872e9260358aE9674DeF3a9b59BEa57 0xca26E3BD694c12F5367c09f68bAA274a992b9613 0x1d308089a2d1ced3f1ce36b1fcaf815b07217be3"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@nomiclabs/hardhat-ethers": "^2.0.2",
+    "@nomiclabs/hardhat-etherscan": "^2.1.2",
+    "@nomiclabs/hardhat-waffle": "^2.0.1",
+    "chai": "^4.3.4",
+    "ethereum-waffle": "^3.3.0",
+    "ethers": "^5.2.0",
+    "hardhat": "^2.3.0",
+    "dotenv": "^9.0.2"
+  }
+}
